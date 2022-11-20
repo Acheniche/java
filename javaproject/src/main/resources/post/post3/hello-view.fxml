@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="615.0" style="-fx-background-color: #F4A460;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="post.post3.HelloController">
+<VBox />
+    <Button fx:id="Buttondepartment" layoutX="50.0" layoutY="40.0" onMouseClicked="#Buttondepartment" prefHeight="26.0" prefWidth="165.0" text="Добавить отделение" />
+    <Button fx:id="Buttonstreet" layoutX="50.0" layoutY="70.0" onMouseClicked="#Buttonstreet" prefHeight="26.0" prefWidth="165.0" text="Добавить улицу" />
+    <Button fx:id="Buttoncondition" layoutX="50.0" layoutY="100.0" onMouseClicked="#Buttoncondition" prefHeight="26.0" prefWidth="166.0" text="Состояние отделения" />
+    <Button fx:id="Buttonregistration" layoutX="50.0" layoutY="130.0" onMouseClicked="#Buttonregistration" prefHeight="26.0" prefWidth="166.0" text="Регистрация посылки" />
+    <Button layoutX="105.0" layoutY="167.0" onAction="#btnClickCancel" text="Выход" />
+<Label layoutX="73.0" layoutY="-1.0" prefHeight="30.0" prefWidth="120.0" text="POST OFFICE" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F4A460;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="post.post3.newstreet">
+    <Button fx:id="addButton" layoutX="65.0" layoutY="174.0" onAction="#btnClickAdd" text="Подтверить" />
+    <Button fx:id="closeButton" layoutX="172.0" layoutY="174.0" onAction="#btnClickCancel" text="Отменить" />
+    <Label contentDisplay="CENTER" layoutX="65.0" layoutY="20.0" prefHeight="78.0" prefWidth="525.0" text="Добавление улицы" textFill="WHITE">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <ComboBox fx:id="Post" layoutX="65.0" layoutY="85.0" prefHeight="26.0" prefWidth="214.0" promptText="Выбор почтового отделения">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <TextField fx:id="enterstreet" layoutX="65.0" layoutY="125.0" prefHeight="40.0" prefWidth="214.0" promptText="Введите название улицы" />
+</AnchorPane>

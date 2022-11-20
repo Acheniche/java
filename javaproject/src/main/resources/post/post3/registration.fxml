@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F4A460;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="post.post3.registration">
+    <Button fx:id="closeButton" layoutX="191.0" layoutY="206.0" onAction="#btnClickCancel" text="Отмена" />
+    <Button fx:id="ButtonRegistr" layoutX="50.0" layoutY="206.0" onAction="#BtnClickRegistr" text="Зарегистрировать" />
+    <Label layoutX="100.0" layoutY="320.0" textFill="WHITE" />
+    <ComboBox fx:id="Post" layoutX="50.0" layoutY="69.0" prefWidth="200.0" promptText="Выбор почтового отделения">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Label contentDisplay="CENTER" layoutX="50.0" layoutY="4.0" prefHeight="78.0" prefWidth="525.0" text="Регистрация посылок" textFill="WHITE">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <RadioButton fx:id="rButton1" layoutX="50.0" layoutY="141.0" mnemonicParsing="false" onAction="#getSize" text="Маленькая" textFill="WHITE">
+        <toggleGroup>
+            <ToggleGroup fx:id="size" />
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="rButton2" layoutX="50.0" layoutY="161.0" mnemonicParsing="false" onAction="#getSize" text="Средняя" textFill="WHITE" toggleGroup="$size" />
+    <RadioButton fx:id="rButton3" layoutX="50.0" layoutY="181.0" mnemonicParsing="false" onAction="#getSize" text="Большая" textFill="WHITE" toggleGroup="$size" />
+    <TextField fx:id="enterstreet" layoutX="50.0" layoutY="104.0" prefHeight="25.0" prefWidth="200.0" promptText="Введите улицу" />
+    <TextField fx:id="enternumberofhouse" layoutX="300.0" layoutY="69.0" prefWidth="200.0" promptText="Введите номер дома"/>
+    <TextField fx:id="enternumberofflat" layoutX="300.0" layoutY="104.0" prefHeight="25.0" prefWidth="200.0" promptText="Введите номер квартиры" />
+    <TextField fx:id="entername" layoutX="300.0" layoutY="134.0" prefHeight="25.0" prefWidth="200.0" promptText="Введите ФИО получателя" />
+</AnchorPane>
